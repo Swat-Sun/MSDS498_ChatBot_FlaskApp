@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>output</title>
+      <style>
+        p {
+            font-size: 24px;
+        }
+
+        body {
+            background-color: #E4E0EE;
+        }
+        .parent{
+            display:flex;
+            gap: 2px;
+        }
+
+        .header {
+            padding: 15px;
+            text-align: center;
+            background: #4E2A84;
+            color: white;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .card1 {
+            /* Add shadows to create the "card" effect */
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 5px; /* 5px rounded corners */
+            border-width: 5px;
+            border-color: black;
+            background: #B6ACD1;
+            color: black;
+            margin-bottom: 10px;
+            padding: 10px;
+            }
+
+            /* On mouse-over, add a deeper shadow */
+            .card1:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+            }
+
+      </style>
+   </head>
+   <body>
+    <div class="header">
+        <h1>SWAM X-Ray Prediction</h1>
+    </div>
+    <div class="parent">
+    <div>
+        <img src = "{{ image_1 }}" >
+    </div>
+    <div>
+        <img src = "{{ image_2 }}">
+    </div>
+    </div>
+    <div class="card1">
+        <div class="container">
+          <p>{{ prediction }} </p>
+        </div>
+    </div>
+   </body>
+</html>

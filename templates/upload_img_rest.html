@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-color: #E4E0EE;
+        }
+        
+        .header {
+          padding: 15px;
+          text-align: center;
+          background: #4E2A84;
+          color: white;
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+        
+        </style>
+<body>
+    <div class="header">
+        <h1>Submit and Image to the Website</h1>
+    </div>
+    
+    <form action = "/output_img_rest" method = "post" enctype="multipart/form-data">  
+        <input type="file" name="img" />  
+        <input type = "submit" value="Upload">  
+    </form>  
+
+</body>
+</html>

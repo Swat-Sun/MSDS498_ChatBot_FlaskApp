@@ -1,0 +1,123 @@
+<style>
+a {
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.header {
+  padding: 15px;
+  text-align: center;
+  background: #4E2A84;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.card1 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 25px; /* 5px rounded corners */
+  border-width: 5px;
+  border-color: black;
+  background: #E4E0EE;
+  color: black;
+  margin-bottom: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.card2 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 25px; /* 5px rounded corners */
+  border-width: 5px;
+  border-color: black;
+  background: #B6ACD1;
+  color: black;
+  margin-bottom: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+</style>
+
+<div class="header">
+    <h1>SWAM MedBot</h1>
+</div>
+
+<a href = "https://msds498swam.azurewebsites.net/">
+  <div class="card1">
+      <div class="container">
+        <h2>Talk to SWAM Azure</h2>
+        <p>SWAM is a medical chatbot that can answer your medical inquiries, read chest X-Rays, schedule doctor's appointments and more! All powered by Microsoft Azure.</p>
+      </div>
+  </div>
+  </a>
+
+  <a href = "/gpt2chatbot">
+    <div class="card2">
+        <div class="container">
+          <h2>Talk to SWAM GPT-2</h2>
+          <p>SWAM GPT-2 is an AI tool programmed to answer your medical inquiries.</p>
+        </div>
+    </div>
+    </a>
+
+<a href = "/upload">
+<div class="card1">
+    <div class="container">
+      <h2>X-Ray Prediction </h2>
+      <p>Submit Chest X-Rays and receive a diagnosis</p>
+    </div>
+</div>
+</a>
+
+<a href = "https://hub.docker.com/repository/docker/mikesoukup/msds498-chatbot/general">
+  <div class="card2">
+      <div class="container">
+        <h2>Docker</h2>
+        <p>Access our image published on DockerHub</p>
+      </div>
+  </div>
+</a>
+
+<a href= "/generate_text">
+<div class="card1">
+    <div class="container">
+      <h2>Text Echo API</h2>
+      <p>User generated text will be echo'd to simulat JSON output from API</p>
+    </div>
+</div>
+</a>
+
+<a href= "/text_api">
+<div class="card2">
+    <div class="container">
+      <h2>Test Text REST API </h2>
+      <p>Receive sample JSON generated via REST API</p>
+    </div>
+</div>
+</a>
+
+<a href= "/upload_img_rest">
+<div class="card1">
+    <div class="container">
+      <h2>Image Upload Demo</h2>
+      <p>Demonstrate the ability to upload images to the website</p>
+    </div>
+</div>
+</a>
